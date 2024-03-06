@@ -1,0 +1,61 @@
+
+#main {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap {
+    gap: 1em;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(50% - 1em);
+    max-width: calc(50% - 1em);
+}
+
+.graph-card {
+    width: calc(50% - 1em);
+    max-width: calc(50% - 1em);
+}
+
+.graph-card div {
+    aspect-ratio: 2/1;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+#overview::part(border) {
+    height: 100%;
+}
+
+#overview::part(base) {
+    height: 100%;
+}
+
+@media screen and (max-width: 1118px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+    .graph-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
